@@ -1,4 +1,6 @@
-# Atticus Form
+# DA Atticus Form
+
+- This is a dup of the OG atticus form 
 
 Below is important information on the structure of the code and how to update or get updated code using your temrinal. You will also have more information of what the code does in the actual JS files.
 
