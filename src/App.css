@@ -1,0 +1,1094 @@
+/* ============== Custom CSS for the entire form ============== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.minHeightContainer {
+  min-height: 650px;
+  max-height: 650px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+.fullHeight {
+  height: 100%;
+}
+
+.tabletOnly {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* App which is parent div for entire site */
+.App {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #166ce6;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Font Families and standard tags */
+@font-face {
+  font-family: "Regular";
+  src: local("Aleo"), url("./assets/fonts/Aleo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("Merriweather"),
+    url("./assets/fonts/Merriweather_36pt-Regular.ttf") format("woff");
+}
+
+/* h1 {
+  font-family: Medium;
+  font-size: 52px;
+}
+h2 {
+  font-family: Medium;
+  font-size: 40px;
+}
+h3 {
+  font-family: Medium;
+  font-size: 34px;
+}
+h4 {
+  font-family: Medium;
+  font-size: 28px;
+}
+h4 {
+  font-family: Medium;
+  font-size: 24px;
+}
+p,
+span,
+a {
+  font-family: "Regular";
+  font-size: 22px;
+} */
+.customText{
+  font-family: "Regular";
+  font-size: 22px;
+}
+button {
+  cursor: pointer;
+}
+button:focus {
+  background-color: rgba(222, 245, 255, 0.69);
+}
+
+/* ============== Font Classes for text and buttons ============== */
+.questionLabel {
+  font-family: "Medium";
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+  width: 37%;
+  text-align: left;
+  line-height: 32px;
+}
+.questionLabelLong {
+  width: 100%;
+  text-align: center;
+}
+.customButtonText {
+  font-family: "Regular";
+  font-size: 22px;
+  padding: 10px;
+  color: black;
+}
+.strapButtonText,
+.strapButtonText:hover {
+  font-family: "Regular";
+  font-size: 22px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 2px;
+  color: black;
+  border: 3px solid rgba(220, 223, 232, 1);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+.footerText {
+  font-family: "Regular";
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 7px;
+}
+.footerLinkText {
+  font-family: "Regular";
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ============== Header and Footer ============== */
+#footer {
+  position: relative;
+}
+.logoHeaderParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.logoHeader {
+  width: 100%;
+  height: auto;
+}
+.footerParent {
+  margin-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: rgba(67, 67, 67, 1);
+}
+.footerColParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 50px;
+  text-align: left;
+}
+.footerCol1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+.footerCol2 {
+  width: 18%;
+}
+.footerCol3 {
+  width: 28%;
+}
+.logoFooter {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.otherLogoParent1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.otherLogoParent2 {
+  display: flex;
+  margin-top: 35px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.otherLogoFooter1 {
+  width: 30%;
+}
+.otherLogoFooter2 {
+  width: 20%;
+}
+
+/* Error code */
+.errorTextContainer {
+  display: none;
+}
+.errorText {
+  font-family: "Regular";
+  font-size: 18px;
+  color: red;
+  text-align: center;
+}
+.errorZipCodeText,
+.errorTextAnswer,
+.errorEmailText,
+.errorPhoneText {
+  display: none;
+  font-family: "Regular";
+  font-size: 18px;
+  color: red;
+  text-align: center;
+}
+
+.errorContainerParent {
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.footerMarginTopMobileOnly {
+  margin-top: 200px;
+}
+
+/* ============== MISC. ============== */
+.asterisk {
+  color: red;
+}
+.sliderImage {
+  width: 40%;
+  height: auto;
+}
+.buttonGroupDefault {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.displayFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.displayRowColumn {
+  display: flex;
+  flex-direction: row;
+}
+.alignCenter {
+  align-items: center;
+}
+.justifyContent {
+  justify-content: center;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.marginTop {
+  margin-top: 20px;
+}
+.marginTopBig {
+  margin-top: 30px;
+}
+.marginBottom {
+  margin-bottom: 20px;
+}
+
+/* steps */
+.stepControllerArrows {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nextButton,
+.nextButton:hover,
+.nextButton:focus {
+  font-family: "Regular";
+  font-size: 14px;
+  color: rgb(244, 120, 42);
+  background-color: transparent;
+  border: none;
+}
+.backButton,
+.backButton:hover,
+.backButton:focus {
+  font-family: "Regular";
+  font-size: 14px;
+  color: rgba(168, 168, 168, 1);
+  background-color: transparent;
+  border: none;
+}
+
+.nextArrow,
+.backArrow {
+  text-align: center;
+  width: 25px;
+  height: auto;
+}
+
+.inputField {
+  font-family: "Regular";
+  font-size: 18px;
+  color: black;
+  border: 3px solid rgba(220, 223, 232, 1);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 10px;
+}
+.textInput {
+  width: 41%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+input[type="text"] {
+  width: 41%;
+}
+.mobileInputWidthStepTen {
+  width: 41%;
+}
+input[type="tel"] {
+  width: 41%;
+}
+
+/* Step 1 */
+.joinSSDI {
+  color: black;
+  width: 37%;
+  text-align: left;
+  line-height: 26px;
+}
+/* Step 2 */
+
+/* Step 3 */
+.selectDropDown {
+  padding: 7px;
+  margin-top: 20px;
+  border-radius: 6px;
+  width: 280px;
+  text-align: center;
+}
+.selectOptions {
+  width: 300px;
+}
+
+/* Step 4 */
+
+/* Step 5 */
+
+/* Step 6 */
+
+/* Step 7 */
+.ageRangeGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Step 8 */
+
+/* Step 9 */
+
+/* Step 10 */
+.stepHeaderContainer {
+  display: flex;
+  justify-content: center;
+}
+.headerTextBenefits {
+  text-align: left;
+  width: 900px;
+  margin-bottom: 20px;
+}
+.lockIconTextParent {
+  /* margin-top: 130px; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.lockIconImage {
+  width: 70px;
+}
+.protectedPII {
+  text-align: left;
+  width: 20%;
+  margin-bottom: 0px !important;
+}
+.nameInputContainerPII {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.emailPhoneInputContainerPII {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.smallButtonClickDisclaimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.smallButtonClickDisclaimerText {
+  width: 450px;
+  padding: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(244, 244, 244);
+  font-size: 18px;
+}
+.majorDisclaimerTextParentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.majorDisclaimerText {
+  text-align: left;
+  font-size: 14px;
+  width: 80%;
+}
+.majorDisclaimerTextAnchorTag {
+  font-size: 14px;
+}
+.submitButtonContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.submitButtonCustom {
+  font-family: "Medium";
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(244, 120, 42);
+}
+.submitButtonCustomDisabled {
+  font-family: "Medium";
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgba(227, 158, 116, 0.7);
+}
+
+.tenthStepSubmitButton {
+  font-family: "Medium";
+  width: 400px;
+  height: 80px;
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(244, 120, 42);
+  opacity: 0.6;
+  /* position: absolute; */
+  /* top: 490px; */
+  z-index: 99999;
+}
+.tenthStepSubmitButton:hover {
+  background-color: rgb(244, 120, 42);
+  color: white;
+  font-family: "Medium";
+  font-size: 22px;
+}
+/* ============== Media Screen Tablet and Mobile ============== */
+@media only screen and (max-width: 1025px) {
+  .hideOnTablet {
+    display: none;
+  }
+  /* IMAGE */
+  .sliderImage {
+    width: 75%;
+    height: auto;
+  }
+  .textInput {
+    width: 90%;
+    padding: 15px;
+  }
+  input[type="text"] {
+    width: 90%;
+  }
+  .mobileInputWidthStepTen {
+    width: 90%;
+  }
+  input[type="tel"] {
+    width: 90%;
+  }
+
+  /* ============== Header and Footer ============== */
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .logoHeader {
+    width: 90%;
+    height: auto;
+  }
+  .logoParent {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .footerParent {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: rgba(67, 67, 67, 1);
+  }
+  .tabletOnly {
+    display: block;
+  }
+  .footerCol1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+  }
+  .footerCol2 {
+    width: 33%;
+  }
+  .footerCol3 {
+    width: 33%;
+  }
+  .logoFooter {
+    width: 80%;
+  }
+  .otherLogoParent1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .otherLogoParent2 {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .otherLogoFooter1 {
+    width: 30%;
+  }
+  .otherLogoFooter2 {
+    width: 25%;
+  }
+  .footerLinkText {
+    width: 100%;
+    text-align: center;
+  }
+  .questionLabel {
+    width: 60%;
+  }
+
+  /* Step 1 */
+  .joinSSDI {
+    color: black;
+    width: 67%;
+    padding-left: 5px;
+    text-align: left;
+  }
+  /* Step 2 */
+
+  /* Step 3 */
+
+  /* Step 4 */
+
+  /* Step 5 */
+
+  /* Step 6 */
+
+  /* Step 7 */
+  /* For long text buttons */
+  .buttonGroupDefaultCustomTablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+  }
+
+  /* Step 8 */
+
+  /* Step 9 */
+
+  /* Step 10 */
+  .stepHeaderContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .headerTextBenefits {
+    text-align: left;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .lockIconTextParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .phoneNumberField {
+    margin-top: 20px;
+  }
+  .lockIconImage {
+    width: 10%;
+  }
+  /* .tenthStepSubmitButton {
+    top: 450px;
+  } */
+  .protectedPII {
+    text-align: left;
+    width: 35%;
+  }
+  .nameInputContainerPII {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+  }
+  .mobileInputWidthStepTenParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .emailPhoneInputContainerPII {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .smallButtonClickDisclaimer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .smallButtonClickDisclaimerText {
+    width: 95%;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(244, 244, 244);
+  }
+  .majorDisclaimerTextParentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .majorDisclaimerText {
+    width: 95%;
+  }
+  .submitButtonContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .submitButtonCustom {
+    font-family: "Medium";
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgb(244, 120, 42);
+  }
+  .submitButtonCustomDisabled {
+    font-family: "Medium";
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(227, 158, 116, 0.7);
+  }
+
+  .strapButtonText,
+  .strapButtonText:hover {
+    font-family: "Regular";
+    font-size: 22px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 2px;
+    color: black;
+    border: 3px solid rgba(220, 223, 232, 1);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+  }
+  .strapButtonText{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .minHeightContainer {
+    min-height: 300px;
+  }
+
+  .tabletOnly {
+    display: block;
+  }
+
+  /* h1 {
+    font-family: Medium;
+    font-size: 48px;
+  }
+  h2 {
+    font-family: Medium;
+    font-size: 38px;
+  }
+  h3 {
+    font-family: Medium;
+    font-size: 32px;
+  }
+  h4 {
+    font-family: Medium;
+    font-size: 26px;
+  }
+  h4 {
+    font-family: Medium;
+    font-size: 22px;
+  }
+  p,
+  span,
+  a {
+    font-family: "Regular";
+    font-size: 18px;
+  } */
+  .customText{
+    font-family: "Regular";
+    font-size: 22px;
+  }
+
+  /* ============== Font Classes for text and buttons ============== */
+  .questionLabel {
+    font-family: "Medium";
+    width: 95%;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 32px !important;
+    color: black;
+  }
+  .strapButtonTextMobileCustom {
+    width: 95%;
+  }
+  .customButtonText {
+    font-family: "Regular";
+    font-size: 22px;
+    padding: 10px;
+    color: black;
+  }
+  .strapButtonText {
+    font-family: "Regular";
+    font-size: 18px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 2px;
+    color: black;
+    border: 3px solid rgba(220, 223, 232, 1);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    width: 88%;
+  }
+  .strapButtonText:hover {
+    font-family: "Regular";
+    font-size: 18px;
+  }
+  /* For long text buttons */
+  .buttonGroupDefaultCustom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* IMAGE */
+  .sliderImage {
+    width: 95%;
+    height: auto;
+  }
+
+  .textInput {
+    width: 88%;
+    padding: 15px;
+  }
+  input[type="text"] {
+    width: 88%;
+  }
+  .mobileInputWidthStepTen {
+    width: 88%;
+  }
+  input[type="tel"] {
+    width: 88%;
+  }
+  /* ============== Header and Footer ============== */
+  #footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .logoHeader {
+    width: 60%;
+    height: auto;
+  }
+  .logoParent {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .footerParent {
+    padding-top: 60px;
+
+    width: 100%;
+    background-color: rgba(67, 67, 67, 1);
+  }
+  .footerColParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 20px;
+    text-align: left;
+  }
+  .footerCol1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    width: 100%;
+  }
+  .footerCol2 {
+    order: 2;
+    width: 100%;
+  }
+  .footerCol3 {
+    order: 1;
+    width: 100%;
+  }
+  .logoFooter {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .otherLogoParent1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .otherLogoParent2 {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .otherLogoFooter1 {
+    width: 30%;
+  }
+  .otherLogoFooter2 {
+    width: 25%;
+  }
+  .footerText {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footerLinkText {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  /* Step 1 */
+  .joinSSDI {
+    color: black;
+    width: 95%;
+    padding-left: 5px;
+    text-align: left;
+    margin-bottom: 0px !important;
+  }
+  /* Step 2 */
+
+  /* Step 3 */
+
+  /* Step 4 */
+
+  /* Step 5 */
+
+  /* Step 6 */
+
+  /* Step 7 */
+
+  /* Step 8 */
+
+  /* Step 9 */
+
+  /* Step 10 */
+  .stepHeaderContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .headerTextBenefits {
+    text-align: left;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .lockIconTextParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .lockIconImage {
+    width: 15%;
+  }
+  .tenthStepSubmitButton {
+    /* top: 650px; */
+    width: 270px;
+
+    height: 70px;
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+  }
+  #root
+    > div
+    > div:nth-child(2)
+    > div
+    > div
+    > div.stepControllerArrows
+    > button.nextButton.tenthStepSubmitButton
+    > img {
+    display: none;
+  }
+  .protectedPII {
+    text-align: left;
+    width: 65%;
+  }
+  .nameInputContainerPII {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 0px;
+  }
+  .emailPhoneInputContainerPII {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 0px;
+  }
+  .smallButtonClickDisclaimer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .smallButtonClickDisclaimerText {
+    width: 90%;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(244, 244, 244);
+  }
+  .majorDisclaimerTextParentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .majorDisclaimerText {
+    width: 95%;
+  }
+  .submitButtonContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .submitButtonCustom {
+    font-family: "Medium";
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgb(244, 120, 42);
+  }
+  .submitButtonCustomDisabled {
+    font-family: "Medium";
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(227, 158, 116, 0.7);
+  }
+  .phoneNumberField {
+    margin-top: 10px;
+  }
+  .i-have-never-worked-full-time {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* For very narrow phone */
+@media only screen and (max-width: 350px) {
+  .buttonGroupDefault {
+    flex-direction: column;
+    width: 80%;
+  }
+  .strapButtonText {
+    width: 97%;
+  }
+}
