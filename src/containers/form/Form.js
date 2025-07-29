@@ -549,11 +549,11 @@ const Form = () => {
       ) {
         // Redirect to not qualified page
         window.location.href =
-          "https://www.citizensdisability.com/seclp-lp-ty-universal/";
+          "https://disabilityadvice.org/thank-you/";
       } else {
         // Redirect to qualified page
         window.location.href =
-          "https://www.citizensdisability.com/sec-thank-you-dti-copy/";
+          "https://disabilityadvice.org/thank-you/";
       }
       // Clear Session storage and reset form data
       clearStorage();
@@ -598,10 +598,10 @@ const Form = () => {
 
   // Form Submit / Brings IP Adress and calls zapier function / Also gets the Date
   const handleSubmit = async () => {
-    setTimeout(() => {
-      sendToZapier(payload);
-    }, 1500); // Delay
-    // await sendToZapier(payload);
+    // setTimeout(() => {
+    //   sendToZapier(payload);
+    // }, 100); // Delay
+    await sendToZapier(payload);
     return;
   };
 
