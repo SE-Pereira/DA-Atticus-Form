@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../assets/components/Button";
-import NextArrow from "../../assets/images/next-arrow.png";
+import NextArrow from "../../assets/images/blue arrow.png";
 import BackArrow from "../../assets/images/back-arrow.png";
 import { motion, AnimatePresence } from "framer-motion";
 

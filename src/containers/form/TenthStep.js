@@ -110,8 +110,10 @@ const TenthStep = ({ validationError, formData, handleFieldChange }) => {
   return (
     <div className="fullWidth fullHeight">
       <div className="displayFlexColumn alignCenter stepHeaderContainer">
-        <p className="questionLabel headerTextBenefits">It looks like we can help you in your journey to get benefits. We'll
-        need to connect to go through a few more details.</p>
+        <p className="questionLabel headerTextBenefits">
+          It looks like we can help you in your journey to get benefits. We'll
+          need to connect to go through a few more details.
+        </p>
         {/* {formData.attorneyHelping === "Yes" ||
         formData.outOfWork === "No" ||
         formData.workedFiveYearsSince === "No" ||
@@ -186,7 +188,7 @@ const TenthStep = ({ validationError, formData, handleFieldChange }) => {
       <div className="smallButtonClickDisclaimer">
         <p className="smallButtonClickDisclaimerText customText">
           By clicking the "FREE CONSULTATION" button, I agree to be contacted by
-          Citizens Disability per the terms below.
+          Disability Advice per the terms below.
         </p>
       </div>
       <div className="submitButtonContainer"></div>
@@ -201,34 +203,33 @@ const TenthStep = ({ validationError, formData, handleFieldChange }) => {
       <div className="majorDisclaimerTextParentContainer">
         <p className="majorDisclaimerText">
           By clicking "FREE CONSULTATION" above I am providing my ESIGN
-          signature and express written consent agreement to permit Citizens
-          Disability, LLC to contact me at the number provided above for
-          marketing purposes regarding Citizens Disability services, including a
-          disability claim, benefits optimization, Medicare, and/or pharmacy
-          services, and customer care messages, such as information and
-          reminders regarding your disability claim. I understand that these
-          calls and/or SMS/MMS messages include those using automated
-          technology, AI generative voice, and prerecorded and/or artificial
-          voice messages. I confirm that the phone number above is accurate, and
-          I am the regular user of that phone. I also agree to Citizens
-          Disability's{" "}
+          signature and express written consent agreement to permit Disability
+          Advice, LLC to contact me at the number provided above for marketing
+          purposes regarding Disability Advice services, including a disability
+          claim, benefits optimization, Medicare, and/or pharmacy services, and
+          customer care messages, such as information and reminders regarding
+          your disability claim. I understand that these calls and/or SMS/MMS
+          messages include those using automated technology, AI generative
+          voice, and prerecorded and/or artificial voice messages. I confirm
+          that the phone number above is accurate, and I am the regular user of
+          that phone. I also agree to Disability Advice's{" "}
           <a
             className="majorDisclaimerTextAnchorTag"
             href="https://citizensdisability.com/sms-terms-and-conditions/"
           >
             SMS Terms and Conditions
-          </a>
-          and
+          </a>{" "}
+           and{" "}
           <a
             className="majorDisclaimerTextAnchorTag"
-            href="https://citizensdisability.com/privacy-policy/"
+            href="https://disabilityadvice.org/privacy-policy/"
           >
             Privacy Policy
           </a>
           . For SMS messages campaigns, text "STOP" to stop and "HELP" for help.
           Message frequency may vary. Msg & data rates may apply. I acknowledge
           that my consent is not required to obtain any good or service, and to
-          contact Citizens Disability without providing consent I can call{" "}
+          contact Disability Advice without providing consent I can call{" "}
           <a className="majorDisclaimerTextAnchorTag" href="tel:18004923260">
             1-800-492-3260
           </a>

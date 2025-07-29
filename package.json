@@ -1,6 +1,6 @@
 {
   "name": "atticus-form",
-  "homepage": "/wp-content/plugins/atticus-form-react/build/",
+  "homepage": "/wp-content/plugins/react-form-atticus/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
