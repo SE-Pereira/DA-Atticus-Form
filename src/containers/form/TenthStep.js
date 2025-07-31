@@ -215,7 +215,7 @@ const TenthStep = ({ validationError, formData, handleFieldChange }) => {
           that phone. I also agree to Disability Advice's{" "}
           <a
             className="majorDisclaimerTextAnchorTag"
-            href="https://citizensdisability.com/sms-terms-and-conditions/"
+            href="https://disabilityadvice.org/sms-terms-and-conditions/"
           >
             SMS Terms and Conditions
           </a>{" "}

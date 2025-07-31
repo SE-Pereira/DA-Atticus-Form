@@ -30,7 +30,7 @@ const Footer = () => {
             <a
               style={{ marginTop: "5px", color: "white" }}
               className="footerLinkText"
-              href="https://www.citizensdisability.com/terms-and-conditions/"
+              href="https://disabilityadvice.org/terms-and-conditions/"
             >
               Terms
             </a>{" "}
@@ -38,7 +38,7 @@ const Footer = () => {
             <a
               style={{ marginTop: "5px", color: "white" }}
               className="footerLinkText"
-              href="https://www.citizensdisability.com/privacy-policy/"
+              href="https://disabilityadvice.org/privacy-policy/"
             >
               Privacy
             </a>
