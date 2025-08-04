@@ -549,11 +549,11 @@ const Form = () => {
       ) {
         // Redirect to not qualified page
         window.location.href =
-          "https://www.citizensdisability.com/seclp-lp-ty-universal";
+          "https://disabilityadvice.org/thank-you-2/";
       } else {
         // Redirect to qualified page
         window.location.href =
-          "https://www.citizensdisability.com/sec-thank-you-dti-copy/";
+          "https://disabilityadvice.org/thank-you-1/";
       }
       // Clear Session storage and reset form data
       clearStorage();
