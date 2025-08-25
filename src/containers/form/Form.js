@@ -705,13 +705,16 @@ const Form = () => {
 
     // Get User IP Address and call the function
     const fetchIpAddress = async () => {
+      console.log("Fetching IP address...");
       try {
-        const response = await fetch("https://geolocation-db.com/json/");
+        // const response = await fetch("https://geolocation-db.com/json/");
+        const response = await fetch("https://api.ipify.org?format=json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        setUserIPAdress(data.IPv4); // Update state with IP
+        // console.log("IP address fetched:", data.ip);
+        setUserIPAdress(data.ip); // Update state with IP
       } catch (e) {
         console.log("IP fetch error:", e);
       }
