@@ -521,8 +521,23 @@ const Form = () => {
   const sendToZapier = async (payload) => {
     // const devURL = process.env.REACT_APP_CLOUD_WEBHOOK;
     const zapierURL = process.env.REACT_APP_ZAPIER_URL;
+    const zapierURL2 = process.env.REACT_APP_ZAPIER_URL_SECOND;
     try {
       await fetch(zapierURL, {
+        method: "POST",
+        body: JSON.stringify(payload),
+      })
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error("Failed to send to Zapier");
+          }
+          console.log("Successfully sent to Zapier!");
+          console.log(res);
+        })
+        .catch((err) => {
+          console.error("Zapier post error", err);
+        });
+      await fetch(zapierURL2, {
         method: "POST",
         body: JSON.stringify(payload),
       })
@@ -548,12 +563,10 @@ const Form = () => {
         formData.receivingSSDIBenefits === "Yes"
       ) {
         // Redirect to not qualified page
-        window.location.href =
-          "https://disabilityadvice.org/thank-you-2/";
+        window.location.href = "https://disabilityadvice.org/thank-you-2/";
       } else {
         // Redirect to qualified page
-        window.location.href =
-          "https://disabilityadvice.org/thank-you-1/";
+        window.location.href = "https://disabilityadvice.org/thank-you-1/";
       }
       // Clear Session storage and reset form data
       clearStorage();
